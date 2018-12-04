@@ -1,0 +1,215 @@
+@import "mixins";
+@import "variables";
+
+body {
+  font-family: 'latoregular';
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  outline: 1px solid red;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.header {
+  width: 100%;
+  background-color: #222222;
+  padding: 0;
+  margin: 0;
+
+  /* HEADER TOP */
+  &-top {
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    justify-content: flex-end;
+
+    &__rNavigation {
+      ul {
+        display: flex;
+        padding: 5px 0;
+
+        li {
+          list-style-type: none;
+          padding: 5px 20px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #fff;
+            margin-right: 20px;
+            transition: all .4s ease-in-out;
+
+            &:hover {
+              transition: all .4s ease-in-out;
+              color: $pink-color;
+            }
+          }
+
+          a:last-child {
+            margin-right: 0;
+          }
+
+          span {
+            color: #fff;
+            font-size: 12px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+
+  /* END HEADER TOP */
+  /* HEADER MAIN */
+  &-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+      outline: 1px solid green;
+      padding: 0 20px 5px 20px;
+      position: relative;
+      margin-top: -20px;
+
+      h1 {
+        @include latoblack;
+        font-size: 25px;
+        color: #ffffff;
+        letter-spacing: -2px;
+        font-style: italic;
+
+        span {
+          color: $pink-color;
+        }
+      }
+
+      img {
+        position: absolute;
+        left: 58%;
+        top: -1%;
+      }
+    }
+
+    &__form {
+      outline: 1px solid blue;
+      flex: 1 1 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+
+      form {
+        width: 100%;
+        text-align: right;
+
+        input {
+          padding: 9px 10px 5px 10px;
+          width: 60%;
+          border-radius: 6px 0 0 6px;
+          color: #a7a7a7;
+          font-size: 14px;
+          border: 0;
+        }
+
+        label {
+          display: inline-block;
+          margin: 0;
+          margin-top: 4px;
+          padding: 5px 12px;
+          border-radius: 0 6px 6px 0;
+          border: 0;
+          margin-left: -6px;
+          background-color: $pink-color;
+          transition: all .4s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            background-color: darken($pink-color, 5%);
+            transition: all .4s ease-in-out;
+          }
+
+          &:hover i {
+            transform: scale(1.2);
+            transition: all .4s ease-in-out;
+            color: #fff;
+          }
+
+          i {
+            transition: all .4s ease-in-out;
+            color: rgba(255, 255, 255, 0.863);
+          }
+        }
+      }
+    }
+
+    &__basket {
+      outline: 1px solid olivedrab;
+      padding: 2px 10px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: flex-start;
+
+      .basketB {
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 0;
+        transition: all .4s ease-in-out;
+        background-color: $pink-color;
+        cursor: pointer;
+
+        &:hover {
+          background-color: darken($pink-color, 5%);
+          transition: all .4s ease-in-out;
+        }
+
+        &:hover i {
+          transform: scale(1.2);
+          transition: all .4s ease-in-out;
+          color: #fff;
+        }
+
+        i {
+          font-size: 120%;
+          transition: all .4s ease-in-out;
+          color: rgba(255, 255, 255, 0.863);
+        }
+      }
+      .price{
+          outline: 1px solid grey;
+          padding: 0;
+          p{
+              text-align: center;
+              padding: 0 5px;
+              margin: 0;
+              a{
+                  text-decoration: none;
+                  color: rgba(255, 255, 255, 0.863);
+                  font-size: 10px;   
+                  transition:all .3s ease-in-out;
+
+                  &:hover{
+                      color:$pink-color;
+                      transition:all .3s ease-in-out;
+                  }
+              }
+          }
+          .tprice{
+            @include latobold;
+            margin-top: -8px;
+          }
+      }
+    }
+  }
+}
