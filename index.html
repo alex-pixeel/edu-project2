@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/rating.css">
+    <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
     <title>Market Supply</title>
 </head>
 
@@ -30,6 +32,7 @@
                 </div>
                 <!-- END HEADER TOP RNAVIGATION -->
             </div>
+            <!-- END HEADER TOP -->
 
             <!-- HEADER MAIN -->
             <div class="header-main">
@@ -42,8 +45,10 @@
                 <!-- HEADER MAIN FORM -->
                 <div class="header-main__form">
                     <form action="#">
-                        <input type="search" name="" id="search1" placeholder="Search here">
-                        <label for="search1"><i class="fa fa-search"></i></label>
+                        <p>
+                            <input type="search" name="" id="search1" placeholder="Search here">
+                            <a for="search1"><i class="fa fa-search"></i></a>
+                        </p>
                     </form>
 
                 </div>
@@ -52,19 +57,1164 @@
                 <div class="header-main__basket">
                     <div class="basketB"><i class="fa fa-shopping-cart"></i> </div>
                     <div class="price">
-                           <p><a href="#">TOTAL</a></p>
-                           <p class="tprice"><a href="#">$600.00</a></p>
+                        <p><a href="#">TOTAL</a></p>
+                        <p class="tprice"><a href="#">$600.00</a></p>
                     </div>
                 </div>
                 <!-- END HEADER MAIN BASKET -->
-
-
             </div>
             <!-- END HEADER MAIN -->
-
         </div>
-        <!-- END HEADER TOP -->
+
+
+        <!-- HEADER FOOTER-->
+        <div class="header-footer">
+            <div class="container containerFlex">
+                <div class="container-left">
+                    <!-- HAMBURGER MENU -->
+                    <div class="categories">
+                        <div class="categories-header">
+                            <label for="catMenu"><i class="fa fa-list-ul lg"></i></label>
+                            <label for="catMenuInside"><i class="fa fa-list-ul md"></i></label>
+                            <a href="#">categories</a>
+                        </div>
+                        <input type="checkbox" id="catMenuInside" checked="checked" class="mdInput">
+                        <div class="catMenuIn">
+                            <ul>
+                                <li><a href="#">Clothing</a><i class="fa fa-play-circle-o"></i></li>
+                                <li><a href="#">Electronics</a><i class="fa fa-play-circle-o"></i></li>
+                                <li><a href="#">Shoes</a><i class="fa fa-play-circle-o"></i></li>
+                                <li><a href="#">Watches</a><i class="fa fa-play-circle-o"></i></li>
+                                <li><a href="#">Jewellery</a><i class="fa fa-play-circle-o"></i></li>
+                                <li><a href="#">Health and Beauty</a><i class="fa fa-play-circle-o"></i></li>
+                                <li><a href="#">Kids and Babies</a><i class="fa fa-play-circle-o"></i></li>
+                                <li><a href="#">Sports</a><i class="fa fa-play-circle-o"></i></li>
+                                <li><a href="#">Home and Garden</a><i class="fa fa-play-circle-o"></i></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container-right footerAligment">
+                    <div class="header-footer__navigation">
+                        <ul>
+                            <li><a href="#">clothing</a></li>
+                            <li><a href="#">electronics shot</a></li>
+                            <li><a href="#">health&beauty</a></li>
+                            <li><a href="#">watches</a></li>
+                            <li><a href="#">jewellery</a></li>
+                            <li><a href="#">shoes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END HEADER FOOTER -->
     </div>
+    <!-- END HEADER -->
+    <!-- WRAPPER -->
+    <div class="wrapper">
+        <div class="container containerWrapp">
+            <!-- LEFT SIDE -->
+            <div class="container-left leftContent">
+                <div class="sblock">
+                    <input type="checkbox" id="catMenu" checked="checked" class="dn">
+                    <div class="wrapper-catMenu">
+                        <ul>
+                            <li><a href="#">Clothing</a><i class="fa fa-play-circle-o"></i></li>
+                            <li><a href="#">Electronics</a><i class="fa fa-play-circle-o"></i></li>
+                            <li><a href="#">Shoes</a><i class="fa fa-play-circle-o"></i></li>
+                            <li><a href="#">Watches</a><i class="fa fa-play-circle-o"></i></li>
+                            <li><a href="#">Jewellery</a><i class="fa fa-play-circle-o"></i></li>
+                            <li><a href="#">Health and Beauty</a><i class="fa fa-play-circle-o"></i></li>
+                            <li><a href="#">Kids and Babies</a><i class="fa fa-play-circle-o"></i></li>
+                            <li><a href="#">Sports</a><i class="fa fa-play-circle-o"></i></li>
+                            <li><a href="#">Home and Garden</a><i class="fa fa-play-circle-o"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flexb-left">
+                    <div class="sblock">
+                        <div class="sblock-header">
+                            <h1>HOT DEALS</h1>
+                            <div class="sblock-header__movers">
+                                <div class="moverL1 moverMain mover1"><i class="fa fa-caret-left"></i></div>
+                                <div class="moverL1 moverMain mover2"><i class="fa fa-caret-right"></i></div>
+                            </div>
+                        </div>
+                        <article>
+                            <div class="sblock-articleMain sblock-articleL1">
+                                <img src="assets/img/limg1.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sblock-articleMain sblock-articleL1">
+                                <img src="assets/img/lim2.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="sblock">
+                        <div class="sblock-header">
+                            <h1>SPECIAL DEALS</h1>
+                            <div class="sblock-header__movers">
+                                <div class="moverL2 moverMain mover1"><i class="fa fa-caret-left"></i></div>
+                                <div class="moverL2 moverMain mover2"><i class="fa fa-caret-right"></i></div>
+                            </div>
+                        </div>
+                        <article>
+                            <div class="sblock-articleMain sblock-articleL2">
+                                <img src="assets/img/lim2.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sblock-articleMain sblock-articleL2">
+                                <img src="assets/img/limg1.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+                <div class="sblock">
+                    <div class="sblock-header">
+                        <h1>NEWSLETTERS</h1>
+                    </div>
+                    <article>
+                        <div class="sblock-articleMain signup">
+                            <h4><a href="#">Sign Up for Our Newsletter!</a></h4>
+                            <form action="#">
+                                <input type="text">
+                            </form>
+                            <a class="buttonV" href="#">SUBSCRIBE</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="banner">
+                    <img src="assets/img/bannerimg.png" alt="">
+                </div>
+
+            </div>
+            <!-- END LEFT SIDE -->
+            <!-- RIGHT SIDER -->
+            <div class="container-right rightContent">
+                <!-- FIRSTPURCHASE BLOCK -->
+                <div class="firstPurchase">
+                    <div class="firstPurchase-text">
+                        <h2>COLLECTION 2018</h2>
+                        <h1>SAVE 50% FOR</h1>
+                        <h3>FIRST PURCHASE</h3>
+                        <p><a href="#">SHOW NOW</a></p>
+                    </div>
+                    <div class="firstPurchase-footer">
+                        <div class="firstPurchase-footer__item">
+                            <h4>MONEY BACK</h4>
+                            <h5>30 Days Money Back Guarantee</h5>
+                        </div>
+                        <div class="firstPurchase-footer__item">
+                            <h4>FREE SHIPPING</h4>
+                            <h5>Shipping on orders over $99</h5>
+                        </div>
+                        <div class="firstPurchase-footer__item">
+                            <h4>SPACIAL SALE</h4>
+                            <h5>Extra $5 off on all items</h5>
+                        </div>
+                    </div>
+                    <img class="sameH" src="assets/img/slideimg.png" alt="">
+                </div>
+                <!-- END FIRSTPURCHASE BLOCK -->
+                <!-- R1 TABBLOCK -->
+
+                <div class="sblock rheader">
+                    <div class="sblock-header">
+                        <h1>HOT DEALS</h1>
+                        <ul>
+                            <li><a href="#">All</a></li>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Shoes</a></li>
+                        </ul>
+                        <div class="sblock-header__movers">
+                            <div class="moverR1 moverMain mover1"><i class="fa fa-caret-left"></i></div>
+                            <div class="moverR1 moverMain mover2"><i class="fa fa-caret-right"></i></div>
+                        </div>
+                    </div>
+                    <article class="rightArticle">
+                        <div class="rightArticle-main sblock-articleR1">
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/rImg1.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/rImg2.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/rImg3.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/rImg4.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rightArticle-main  sblock-articleR1">
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/rImg3.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/rImg4.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/rImg1.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/rImg2.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+                <!-- END R1 TABBLOCK -->
+                <!-- FSALEBLOCK -->
+                <div class="fsaleBlock ">
+                    <div class="fsaleBlock-buy">
+                        <div class="fsaleBlock-buy__img">
+                            <img class="saleimg" src="assets/img/saleImg1.png" alt="">
+                            <img class="trangle" src="assets/img/saleImgTr.png" alt="">
+                        </div>
+                        <div class="fsaleBlock-buy__buying">
+                            <p class="date">2016</p>
+                            <h2>FASHION SALE</h2>
+                            <p class="buynow"><a href="#">BUY NOW</a></p>
+                            <p class="itemsOnly">*on selected items only</p>
+                        </div>
+                    </div>
+                    <div class="fsaleBlock-buy mr0">
+                        <div class="fsaleBlock-buy__img">
+                            <img class="saleimg" src="assets/img/saleImg2.png" alt="">
+                            <img class="trangle" src="assets/img/saleImgTr.png" alt="">
+                        </div>
+                        <div class="fsaleBlock-buy__buying">
+                            <p class="date">2016</p>
+                            <h2>FASHION SALE</h2>
+                            <p class="buynow"><a href="#">BUY NOW</a></p>
+                            <p class="itemsOnly">*on selected items only</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- END FSALEBLOCK -->
+                <!-- LAST PRODUCTS -->
+                <div class="sblock rheader">
+                    <div class="sblock-header">
+                        <h1>LATEST PRODUCTS</h1>
+                        <ul>
+                            <li><a href="#">All</a></li>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Shoes</a></li>
+                        </ul>
+                        <div class="sblock-header__movers">
+                            <div class="moverR2 moverMain mover1"><i class="fa fa-caret-left"></i></div>
+                            <div class="moverR2 moverMain mover2"><i class="fa fa-caret-right"></i></div>
+                        </div>
+                    </div>
+                    <article class="rightArticle">
+                        <div class="rightArticle-main sblock-articleR2">
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/r2Img1.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/r2Img2.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/r2Img3.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/r2Img4.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rightArticle-main  sblock-articleR2">
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/rImg3.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/rImg4.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/rImg1.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sblock-articleMain">
+                                <img src="assets/img/rImg2.png" alt="">
+                                <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                <p><span>$100.00</span>$90.00</p>
+                                <div class="sblock-article__stars">
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+                <!-- END LAST PRODUCTS -->
+
+                <!-- SHOPNOW -->
+                <div class="shopNow sblock">
+                    <div class="shopNow-img">
+                        <img src="assets/img/buyimg.jpg" alt="">
+                    </div>
+                    <div class="shopNow-shop">
+                        <h1>BEAUTIFUL LAPTOP</h1>
+                        <h2>RETINA DISPLAY 18" READY!</h2>
+                        <a class="buttonV" href="#">SHOP NOW</a>
+                    </div>
+                </div>
+                <!-- END SHOPNOW -->
+                <!-- FEATURED PRODUCTS -->
+                <div class="sblock rheader featured-products">
+                    <div class="sblock-header">
+                        <h1>FEATURED PRODUCTS</h1>
+                        <div class="sblock-header__movers">
+                            <div class="moverR3 moverMain mover1"><i class="fa fa-caret-left"></i></div>
+                            <div class="moverR3 moverMain mover2"><i class="fa fa-caret-right"></i></div>
+                        </div>
+                    </div>
+                    <article class="rightArticle">
+                        <div class="rightArticle-main sblock-articleR3 featured-products__main">
+                            <div class="sblock-articleMain featured-products__main-items">
+                                <img src="assets/img/r3Img1.png" alt="">
+                                <div class="flexb-Fproducts">
+                                    <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                    <p><span>$100.00</span>$90.00</p>
+                                    <div class="sblock-article__stars">
+                                        <div class="rate">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sblock-articleMain featured-products__main-items">
+                                <img src="assets/img/r3Img2.png" alt="">
+                                <div class="flexb-Fproducts">
+                                    <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                    <p><span>$100.00</span>$90.00</p>
+                                    <div class="sblock-article__stars">
+                                        <div class="rate">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sblock-articleMain featured-products__main-items">
+                                <img src="assets/img/r3Img3.png" alt="">
+                                <div class="flexb-Fproducts">
+                                    <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                    <p><span>$100.00</span>$90.00</p>
+                                    <div class="sblock-article__stars">
+                                        <div class="rate">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sblock-articleMain featured-products__main-items">
+                                <img src="assets/img/r3Img4.png" alt="">
+                                <div class="flexb-Fproducts">
+                                    <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                    <p><span>$100.00</span>$90.00</p>
+                                    <div class="sblock-article__stars">
+                                        <div class="rate">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sblock-articleMain featured-products__main-items">
+                                <img src="assets/img/r3Img5.png" alt="">
+                                <div class="flexb-Fproducts">
+                                    <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                    <p><span>$100.00</span>$90.00</p>
+                                    <div class="sblock-article__stars">
+                                        <div class="rate">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sblock-articleMain featured-products__main-items">
+                                <img src="assets/img/r3Img6.png" alt="">
+                                <div class="flexb-Fproducts">
+                                    <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                    <p><span>$100.00</span>$90.00</p>
+                                    <div class="sblock-article__stars">
+                                        <div class="rate">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="rightArticle-main sblock-articleR3 featured-products__main">
+                            <div class="sblock-articleMain featured-products__main-items">
+                                <img src="assets/img/r3Img1.png" alt="">
+                                <div class="flexb-Fproducts">
+                                    <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                    <p><span>$100.00</span>$90.00</p>
+                                    <div class="sblock-article__stars">
+                                        <div class="rate">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sblock-articleMain featured-products__main-items">
+                                <img src="assets/img/r3Img2.png" alt="">
+                                <div class="flexb-Fproducts">
+                                    <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                    <p><span>$100.00</span>$90.00</p>
+                                    <div class="sblock-article__stars">
+                                        <div class="rate">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sblock-articleMain featured-products__main-items">
+                                <img src="assets/img/r3Img3.png" alt="">
+                                <div class="flexb-Fproducts">
+                                    <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                    <p><span>$100.00</span>$90.00</p>
+                                    <div class="sblock-article__stars">
+                                        <div class="rate">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sblock-articleMain featured-products__main-items">
+                                <img src="assets/img/r3Img4.png" alt="">
+                                <div class="flexb-Fproducts">
+                                    <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                    <p><span>$100.00</span>$90.00</p>
+                                    <div class="sblock-article__stars">
+                                        <div class="rate">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sblock-articleMain featured-products__main-items">
+                                <img src="assets/img/r3Img5.png" alt="">
+                                <div class="flexb-Fproducts">
+                                    <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                    <p><span>$100.00</span>$90.00</p>
+                                    <div class="sblock-article__stars">
+                                        <div class="rate">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sblock-articleMain featured-products__main-items">
+                                <img src="assets/img/r3Img6.png" alt="">
+                                <div class="flexb-Fproducts">
+                                    <h4><a href="#">Lorem, ipsum dolor</a></h4>
+                                    <p><span>$100.00</span>$90.00</p>
+                                    <div class="sblock-article__stars">
+                                        <div class="rate">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </article>
+                </div>
+                <!-- END FEATURED PRODUCTS -->
+            </div>
+            <!-- END RIGHT SIDE -->
+        </div>
+    </div>
+    <!-- END WRAPPER -->
+    <!-- PRE FOOTER -->
+    <div class="prefooter">
+        <div class="container">
+            <div class="prefooter-brands">
+                <div class="brand">
+                    <a href="#"><img src="assets/img/brand1.png" alt=""></a>
+                </div>
+                <div class="brand">
+                    <a href="#"><img src="assets/img/brand2.png" alt=""></a>
+                </div>
+                <div class="brand">
+                    <a href="#"><img src="assets/img/brand3.png" alt=""></a>
+                </div>
+                <div class="brand">
+                    <a href="#"><img src="assets/img/brand4.png" alt=""></a>
+                </div>
+                <div class="brand">
+                    <a href="#"><img src="assets/img/brand5.png" alt=""></a>
+                </div>
+                <div class="brand">
+                    <a href="#"><img src="assets/img/brand1.png" alt=""></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END PRE FOOTER -->
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <div class="flex-footer">
+                <div class="footer-infos footer-contact">
+                    <div class="footer-contact__logo">
+                        <h1><span>Market</span>Supply</h1>
+                        <img class="logoH" src="assets/img/logoimg.png" alt="">
+                    </div>
+                    <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh velit it’s a cold world out
+                        there.
+                    </p>
+                    <ul>
+                        <li><a href="#">0123 Main Road, Your City, NY 123456
+                            </a><span class="fa fa-map-marker"></span></li>
+                        <li><a href="#">(000) 2345 - 6789</a><span class="fa fa-phone"></span></li>
+                        <li><a href="#"> info@psdfreebies.com</a><span class="fa fa-envelope"></span></li>
+                    </ul>
+                </div>
+                <div class="footer-infos footer-info">
+                    <h1>INFORMATION</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Our Story</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy&Policy</a>
+                        </li>
+                        <li> <a href="#">Terms&Conditions</a></li>
+                        <li>
+                            <a href="#">Shipping&Delivery</a>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-infos footer-social">
+                    <h1>OUR SOCIAL</h1>
+                    <div class="flex-social">
+                        <div class="social-l">
+                            <ul>
+                                <li><a href="#">Google+</a><span class="fa fa-google-plus"></span></li>
+                                <li><a href="#">Pinterest</a><span class="fa fa-pinterest"></span></li>
+                                <li><a href="">Vimeo</a><span class="fa fa-vimeo"></span></li>
+                                <li><a href="">Instagram</a><span class="fa fa-instagram"></span></li>
+                            </ul>
+                        </div>
+                        <div class="social-r">
+                            <ul>
+                                <li><a href="#">Facebook</a><span class="fa fa-facebook"></span></li>
+                                <li><a href="#">Twitter</a><span class="fa fa-twitter"></span></li>
+                                <li><a href="">RRS</a><span class="fa fa-vimeo"></span></li>
+                                <li><a href="">YouTube</a><span class="fa fa-youtube"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-infos footer-open">
+                    <h1>OPENING TIME</h1>
+                    <ul>
+                        <li><a href="#">Monday - Friday: 08:30 am - 09:30 pm</a><span class="fa fa-clock-o"></span></li>
+                        <li><a href="">Sat - Sun: 09:00 am - 10:00 pm</a></li>
+                    </ul>
+                    <h1>PAYMENT OPTION</h1>
+                    <div class="payment">
+                        <a href="#"> <span class="fa fa-cc-mastercard"></span></a>
+                        <a href="#"> <span class="fa fa-cc-amex"></span></a>
+                        <a href="#"> <span class="fa fa-cc-jcb"></span></a>
+                        <a href="#"> <span class="fa fa-cc-stripe"></span></a>
+                        <a href="#"> <span class="fa fa-cc-visa"></span></a>
+                        <a href="#"> <span class="fa fa-cc-paypal"></span></a>
+                        <a href="#"> <span class="fa fa-credit-card-alt"></span></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END FOOTER -->
+    <!-- L FOOTER  -->
+<div class="lfooter">
+    <div class="lfooter-nav">
+        <ul>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Advance</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>  
+    </div>
+    <div class="lfooter-reserved">
+        <p>© 2016  <a href="#"> PSDFreebies.com</a>  |   All Rights Reserved.</p>
+    </div>
+</div>
+    <!-- END L FOOTER -->
+
+
+    <script>
+        (function ($) {
+            function fixButtonHeights() {
+                var heights = new Array();
+
+                // Loop to get all element heights
+                $('.sameH').each(function () {
+                    // Need to let sizes be whatever they want so no overflow on resize
+                    $(this).css('min-height', '0');
+                    $(this).css('max-height', 'none');
+                    $(this).css('height', 'auto');
+
+                    // Then add size (no units) to array
+                    heights.push($(this).height());
+                });
+
+                // Find max height of all elements
+                var max = Math.max.apply(Math, heights);
+
+                // Set all heights to max height
+                $('.firstPurchase').each(function () {
+                    $(this).css('height', max + 'px');
+                    // Note: IF box-sizing is border-box, would need to manually add border and padding to height (or tallest element will overflow by amount of vertical border + vertical padding)
+                });
+            }
+
+            $(window).load(function () {
+                // Fix heights on page load
+                fixButtonHeights();
+
+                // Fix heights on window resize
+                $(window).resize(function () {
+                    // Needs to be a timeout function so it doesn't fire every ms of resize
+                    setTimeout(function () {
+                        fixButtonHeights();
+                    }, 120);
+                });
+            });
+        })(jQuery);
+
+        // ===========================   NEXT SAMEHEIGHT FUNCTION  ===========================   
+        (function ($) {
+            function fixButtonHeights2() {
+                var heights = new Array();
+
+                // Loop to get all element heights
+                $('.footer').each(function () {
+                    // Need to let sizes be whatever they want so no overflow on resize
+                    $(this).css('min-height', '0');
+                    $(this).css('max-height', 'none');
+                    $(this).css('height', 'auto');
+
+                    // Then add size (no units) to array
+                    heights.push($(this).height());
+                });
+
+                // Find max height of all elements
+                var max = Math.max.apply(Math, heights);
+
+                // Set all heights to max height
+                $('.sameH').each(function () {
+                    $(this).css('height', max + 'px');
+                    // Note: IF box-sizing is border-box, would need to manually add border and padding to height (or tallest element will overflow by amount of vertical border + vertical padding)
+                });
+            }
+
+            $(window).load(function () {
+                // Fix heights on page load
+                fixButtonHeights2();
+
+                // Fix heights on window resize
+                $(window).resize(function () {
+                    // Needs to be a timeout function so it doesn't fire every ms of resize
+                    setTimeout(function () {
+                        fixButtonHeights2();
+                    }, 120);
+                });
+            });
+        })(jQuery);
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".sblock-articleL1").not(":first").hide();
+            $(".moverL1").click(function () {
+                $(".moverL1").removeClass("active").eq($(this).index()).addClass("active");
+                $(".sblock-articleL1").hide().eq($(this).index()).fadeIn()
+            }).eq(0).addClass("active");
+        });
+        $(document).ready(function () {
+            $(".sblock-articleL2").not(":first").hide();
+            $(".moverL2").click(function () {
+                $(".moverL2").removeClass("active").eq($(this).index()).addClass("active");
+                $(".sblock-articleL2").hide().eq($(this).index()).fadeIn()
+            }).eq(0).addClass("active");
+        });
+        $(document).ready(function () {
+            $(".sblock-articleR1").not(":first").hide();
+            $(".moverR1").click(function () {
+                $(".moverR1").removeClass("active").eq($(this).index()).addClass("active");
+                $(".sblock-articleR1").hide().eq($(this).index()).fadeIn()
+            }).eq(0).addClass("active");
+        });
+        $(document).ready(function () {
+            $(".sblock-articleR2").not(":first").hide();
+            $(".moverR2").click(function () {
+                $(".moverR2").removeClass("active").eq($(this).index()).addClass("active");
+                $(".sblock-articleR2").hide().eq($(this).index()).fadeIn()
+            }).eq(0).addClass("active");
+        });
+        $(document).ready(function () {
+            $(".sblock-articleR3").not(":first").hide();
+            $(".moverR3").click(function () {
+                $(".moverR3").removeClass("active").eq($(this).index()).addClass("active");
+                $(".sblock-articleR3").hide().eq($(this).index()).fadeIn()
+            }).eq(0).addClass("active");
+        });
+    </script>
 </body>
 
 </html>
